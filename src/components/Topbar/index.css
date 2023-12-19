@@ -1,0 +1,243 @@
+.imgBox {
+  background: #181818;
+  /* width: 200px;
+  height: 100%; */
+  width: 130px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 160px;
+
+  .logo {
+    display: block;
+    padding: 10px 0;
+
+    img {
+      display: block;
+      margin: 8px auto;
+      width: 120px;
+      height: auto;
+      margin-left: 10px;
+      
+      &.sub-logo {
+        width: 40px;
+      }
+    }
+  }
+
+  .nav-bar {
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #181818;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    top: 0px;
+    left: 125px;
+    right: 0px;
+    height: 160px;
+  }
+  
+  .nav-bar > div {
+    background-color: #181818;
+    width: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    width: auto;
+    min-width: 70px;
+    padding: 20px;
+    z-index: 4;
+
+    a {
+      font-size: 22px;
+      letter-spacing: 2px;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: #ffd700;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 22px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child {
+        &:after {
+          content: 'Home';
+        }
+      }
+    }
+
+    a.about-link {
+      &:after {
+        content: 'Om';
+      }
+    }
+ 
+    a.contact-link {
+      &:after {
+        content: 'Kontakt';
+      }
+    }
+    
+    a.experience-link {
+      &:after {
+        content: 'Arbetslivserfarenhet';
+      }
+    }
+  }
+
+  a.active {
+    svg {
+      color: #ffd700;
+      text-align: center;
+    }
+  }
+} 
+
+  /* .nav-bar {
+    background: #181818;
+    display: block;
+    text-align:left;
+    position: absolute;
+    margin-left: 50%; 
+    left: 130px;
+    height: auto;
+    top: 20px;
+    width: auto;
+    z-index: 3;
+    /* height: 210px;
+    top: 40%;
+    margin-top: -120px;
+    width: 100%; */
+
+
+    /* a.portfolio-link {
+      position: absolute;
+      margin-left: 450px;
+      margin-top: 0px;
+    
+      &:after {
+        content: 'PORTFOLIO';
+        margin-left: -40px;
+      }
+    } */
+/*
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        line-height: 16px;
+        color: #4d4d4e;
+      }
+
+      &:hover {
+        .anchor-icon {
+          color: #ffd700;
+        }
+      }
+    }
+  }
+}
+*/
+.hamburger-icon, .close-icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .nav-bar { 
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+     ul, nav {
+      display: none;
+     }
+
+     nav {
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #181818;
+      height: 100%;
+      margin: 0;
+      z-index: 2;
+      position: fixed;
+
+      &.mobile-show {
+        display: block;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10PX;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+     }
+
+     .hamburger-icon,
+     .close-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: block;
+     }
+  }
+}
