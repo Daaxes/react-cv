@@ -12,10 +12,10 @@ const About = () => {
 
   return (
     <>
-      <div className="container about-page">
+      {/* <div className="containerAbout-page"> */}
         <div className="textZoneAbout">
           <h1>
-            About me
+            Om mig
           </h1>
           <h2>
           <p>
@@ -59,7 +59,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </>
   )
 }

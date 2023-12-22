@@ -3,11 +3,32 @@
   src: local('Cinzel'), url('./components/Fonts/Cinzel-ExtraBold.ttf');
 }
 
+h1{
+  font-size:x-large;
+  color: #f5b609;
+}
+
+h2{
+  font-size: large;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
+  a:link {
+    color: #f5b609;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #f5b609;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
   color: #444;

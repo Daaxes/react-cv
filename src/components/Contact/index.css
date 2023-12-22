@@ -1,0 +1,134 @@
+h1{
+  font-size:xx-large;
+  color: #f5b609;
+}
+
+h2{
+  font-size: large;
+}
+
+.contact-form {
+  width: 20%;
+  margin-top: 300px;
+  margin-left: 400px;  
+  top: 30px;
+  text-align: left;
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .contact-page{
+    position: absolute;
+    background: #08b91f;
+    left: 450px;
+    top: 150px;
+  }
+
+  textarea {
+    top: 60px;
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+  }
+
+  .contactTextZone{
+  position: absolute;
+  left: 400px;
+  top:200px;
+  color: #f5b609;
+  background: #115173;
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 150px;
+  z-index: 6;
+  }
+  
+  .text-zone2{
+    position: absolute;
+    text-align:left;
+    margin-top: 400px;
+    margin-left: 40px;
+    width: 680px;
+    left: 40px;
+    }
+    
+  .flat-button {
+    color: #ffd700;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #ffd700;
+    float: left;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+  }
+}
+
+
+label{
+  font-size: 16px;
+  color: #ffd700;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .map-wrap {
+    float: none;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .info-map {
+    display: none;
+  }
+}

@@ -7,11 +7,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
-  faUser,
-  faEnvelope,
-  faSuitcase,
-  faBars,
   faClose,
+  // faUser,
+  // faEnvelope,
+  // faSuitcase,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 import './index.css'
@@ -20,13 +20,6 @@ const Topbar = () => {
   const [showNav, setShowNav] = useState(false);
 
   return (
-    <div className='imgBox'>
-      <Link 
-        className="logo"
-        to="/"
-        onClick={() => setShowNav(false)}>
-        <img src={LogoS} alt="Logo" />
-      </Link>
     <div className="nav-bar">
       {/* <div className={showNav ? 'mobile-show' : ''}> */}
         <div>
@@ -74,42 +67,13 @@ const Topbar = () => {
           color="#ffd700"
           size="3x"
           className='close-icon' />
-      </div>
-      {/* <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/daaxes"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/Daaxes"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-      </ul> */}
-      {/* <FontAwesomeIcon 
+      <FontAwesomeIcon 
           onClick={() => setShowNav(true)}
           icon={faBars}
           color="#ffd700"
           size="3x"
           className='hamburger-icon' />
-    </div> */}
+    {/* </div> */}
       
     </div>
   )

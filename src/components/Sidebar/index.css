@@ -1,33 +1,48 @@
-  .nav-bar {
-    position: fixed;
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #181818;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
-    top: 0px;
-    left: 300px;
-    right: 0px;
-    height: 160px;
+h1{
+  font-size:x-large;
+  color: #f5b609;
+}
+
+h2{
+  font-size: large;
+}
+
+.side-bar {
+  background: #181818;
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 400px;
+  text-align: center;
+  .logo {
+    display: block;
+    padding: 8px 0;
+
+    img {
+      display: block;
+      margin: 8px auto;
+      width: 200px;
+      height: auto;
+      
+      &.sub-logo {
+        width: 50px;
+      }
+    }
   }
-  
-  .nav-bar > div {
-    background-color: #181818;
-    width: 100px;
-    margin-right: 20px;
-    margin-top: 10px;
+
+  nav {
+    display: block;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    width: auto;
-    min-width: 70px;
-    padding: 20px;
-    z-index: 2;
+    position: absolute;
+    height: 410px;
+    height: 210px;
+    top: 500px;
+    width: 100%;
 
     a {
       font-size: 22px;
-      letter-spacing: 2px;
       color: #4d4d4e;
       display: block;
       line-height: 51px;
@@ -36,6 +51,7 @@
       text-decoration: none;
 
       i {
+
         transition: all 0.3s ease-out;
       }
 
@@ -53,13 +69,14 @@
 
       &:after {
         content: '';
-        font-size: 22px;
+        font-size: 16px;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
         display: block;
         width: 100%;
         text-align: center;
+
         opacity: 0;
         -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
@@ -67,95 +84,39 @@
 
       &:first-child {
         &:after {
-          content: 'Home';
+          content: 'HOME';
         }
       }
     }
 
-    a.about-link {
-      &:after {
-        content: 'Om';
-      }
-    }
- 
     a.contact-link {
       &:after {
-        content: 'Kontakt';
+        content: 'E-Post';
       }
     }
-    
-    a.experience-link {
+
+    a.linkedin-link {
       &:after {
-        content: 'Arbetslivserfarenhet';
+        content: 'LinkedIn';
       }
     }
-  }
 
-  a.active {
-    svg {
-      color: #ffd700;
-      text-align: center;
-    }
-  }
-/* }  */
-
-  /* .nav-bar {
-    background: #181818;
-    display: block;
-    text-align:left;
-    position: absolute;
-    margin-left: 50%; 
-    left: 130px;
-    height: auto;
-    top: 20px;
-    width: auto;
-    z-index: 3;
-    /* height: 210px;
-    top: 40%;
-    margin-top: -120px;
-    width: 100%; */
-
-
-    /* a.portfolio-link {
-      position: absolute;
-      margin-left: 450px;
-      margin-top: 0px;
-    
+    a.github-link {
       &:after {
-        content: 'PORTFOLIO';
-        margin-left: -40px;
+        content: 'GitHub';
       }
-    } */
-/*
+    }
 
-  ul {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: block;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    margin: 0;
-
-    li {
-      a {
-        padding: 7px 0;
-        display: block;
-        font-size: 15px;
-        line-height: 16px;
-        color: #4d4d4e;
-      }
-
-      &:hover {
-        .anchor-icon {
-          color: #ffd700;
-        }
+    a.active {
+      svg {
+        color: #ffd700;
       }
     }
   }
+
+
 }
-*/
+
 .hamburger-icon, .close-icon {
   display: none;
 }
