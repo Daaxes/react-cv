@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-cv/static/css/main.d36642e9.css",
+    "main.js": "/react-cv/static/js/main.375de278.js",
+    "static/js/787.5ddb7746.chunk.js": "/react-cv/static/js/787.5ddb7746.chunk.js",
+    "static/media/Cinzel-ExtraBold.ttf": "/react-cv/static/media/Cinzel-ExtraBold.d04173c84f095ca334a8.ttf",
+    "static/media/phoenix.jpg": "/react-cv/static/media/phoenix.15e2dd8d868f51fca7a0.jpg",
+    "static/media/Danne.png": "/react-cv/static/media/Danne.b38d0532d26b5ab107f6.png",
+    "index.html": "/react-cv/index.html",
+    "main.d36642e9.css.map": "/react-cv/static/css/main.d36642e9.css.map",
+    "main.375de278.js.map": "/react-cv/static/js/main.375de278.js.map",
+    "787.5ddb7746.chunk.js.map": "/react-cv/static/js/787.5ddb7746.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d36642e9.css",
+    "static/js/main.375de278.js"
+  ]
+}
